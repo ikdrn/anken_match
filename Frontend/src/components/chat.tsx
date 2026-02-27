@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { SkillSheet, Message, Project, AIAnalysis } from '../types';
+import { SkillSheet, Message } from '../types';
 
 /**
  * チャットインターフェースコンポーネント

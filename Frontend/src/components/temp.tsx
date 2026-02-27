@@ -279,6 +279,7 @@ const SkillSheetManager: React.FC<SkillSheetManagerProps> = ({ isOpen, onClose, 
    * スキルと合計経験年数の動的算出
    * 重複期間を考慮して計算
    */
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const calculateSkillExperience = (): Map<string, number> => {
     // 技術ごとに期間のリストを保持
     const techPeriods: Map<string, Array<{ start: Date; end: Date }>> = new Map();
