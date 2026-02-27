@@ -39,7 +39,8 @@ const AllProjects: React.FC<AllProjectsProps> = ({ isOpen, onClose }) => {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://localhost:8080/api/projects');
+      const API_BASE = process.env.REACT_APP_API_URL || '';
+      const response = await fetch(`${API_BASE}/api/projects`);
       if (!response.ok) {
         throw new Error('案件の取得に失敗しました');
       }
